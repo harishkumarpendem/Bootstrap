@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS files -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <style>
+        .breadcrumb {
+            background-color: lightgreen;
+        }
+        .breadcrumb-item + .breadcrumb-item::before {
+            display: inline-block;
+            padding-right: 0.5rem;
+            color: red;
+            content: "\\";
+
+        }
+    </style>
+    <title>Bootstrap Breadgrumbs</title>
+
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">Bootstrap Breadgrumbs</a>
+</nav>
+<!--************************Start here***********************-->
+
+<div class="continer mt-5">
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">Home</li>
+    </ol>
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="#">Home</a>
+        </li>
+        <li class="breadcrumb-item">About</li>
+    </ol>
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="#">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="#">About</a>
+        </li>
+        <li class="breadcrumb-item">Profile</li>
+    </ol>
+
+</div>
+
+
+
+<!--************************End here***********************-->
+<div style="margin-bottom: 500px"></div>
+
+<!-- Bootstrap js files -->
+<script src="bootstrap/js/jquery.js"></script>
+<script src="bootstrap/js/popper.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="bootstrap/js/mdb.js"></script>
+</body>
+</html>
